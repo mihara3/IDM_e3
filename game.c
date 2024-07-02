@@ -5,6 +5,11 @@
 
 int main(){
     int i, heads = 0, tails = 0, a;
+    char str[100];
+    printf("Who are you?\n");
+    printf("> ");
+    scanf("%s", str);
+    printf("Hello, %s!\n", str);
     printf("Tossing a coin...\n");
     for(i = 0; i < 3; i++){
         printf("Round %d: ", i+1);
@@ -21,5 +26,7 @@ int main(){
         if(i < 2) sleep(1); // wait 1 second
     }
     printf("Heads: %d, Tails: %d\n", heads, tails);
+    if(heads > tails) printf("You won!\n");
+    else printf("You lost\n");
     return 0;
 }
