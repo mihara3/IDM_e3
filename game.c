@@ -5,6 +5,11 @@
 
 int main(){
     int i, heads = 0, tails = 0, a;
+    char str[100];
+    printf("Who are you?\n");
+    printf("> ");
+    scanf("%s", str);
+    printf("Hello, %s!\n", str);
     printf("Tossing a coin...\n");
     for(i = 0; i < 3; i++){
         printf("Round %d: ", i+1);
