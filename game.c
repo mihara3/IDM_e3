@@ -26,7 +26,7 @@ int main(){
         if(i < 2) sleep(1); // wait 1 second
     }
     printf("Heads: %d, Tails: %d\n", heads, tails);
-    if(heads > tails) printf("You won!\n");
-    else printf("You lost\n");
+    if(heads > tails) printf("%s won!\n", str);
+    else printf("%s lost\n", str);
     return 0;
 }
